@@ -198,12 +198,15 @@
     }
 
     function window_onload() {
+        var divCountZero = document.getElementById('divCountZero');
+        var divCountFirst = document.getElementById('divCountFirst');
+
         <%if request.TotalBytes=0 then%>   
-            divCount(1).innerHTML = ""
-        divCount(0).innerHTML = "<font color=red><b>No filters specified. Please specify filters and click refresh.</b></font>"
+            divCountFirst.innerHTML = ""
+        divCountZero.innerHTML = "<font color=red><b>No filters specified. Please specify filters and click refresh.</b></font>"
         form1.fleet_code.value = "ACTIVE_VESSELS"
     <%else%>
-        divCount(0).innerHTML = divCount(1).innerHTML
+        divCountZero.innerHTML = divCountFirst.innerHTML
         form1.fleet_code.value = "<%=request("fleet_code")%>"
     <%end if%>
     <%if request("vessel_code")="" then%>
@@ -806,7 +809,7 @@ set rsTemp=nothing
 	<%end if%>
   </tr>
   <tr>
-	<td colspan="2"><div id=divCount align="left"></div>
+	<td colspan="2"><div id=divCountZero align="left"></div>
   </tr>
 </table>
 <table width="100%" border="0">
@@ -1142,7 +1145,7 @@ end if
 
 %>
 </table>
-<div id=divCount align="left"><strong>Number of inspections :</strong> <%=v_ctr%></div>
+<div id=divCountFirst align="left"><strong>Number of inspections :</strong> <%=v_ctr%></div>
 </body>
 </html>
 <%

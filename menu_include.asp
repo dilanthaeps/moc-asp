@@ -28,7 +28,7 @@ position:absolute;
 visibility:hidden;
 }
 </style>
-<script language=vbscript>
+<script language="vbscript">
 sub HideCombos
 	set col = document.getElementsByTagName("SELECT")
 	for each o in col
