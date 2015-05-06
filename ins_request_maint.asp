@@ -100,7 +100,7 @@
     <script language="VBScript" src="vb_date.vs"></script>
     <script id="clientEventHandlersJS" language="javascript">
 <!--
-        //add test comment for Github
+        
     function fncall(v_ins_request_id)
     {
         winStats='toolbar=no,location=no,directories=no,menubar=no,'
