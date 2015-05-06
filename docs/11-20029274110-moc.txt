@@ -1,0 +1,48 @@
+Itenary of current port and next port avalable.
+
+Port call 
+
+Expected call
+
+Reset, save the changes,  save&close, close
+
+Are you sure? Unsaved changes will be lost!
+
+
+Accepted based Sire (show the list of inspection, moc, date inspected, port inspected and port inspected filter to the particular vessel) active inspection.
+Take the inspection port/insp date/ expiry date and allow the user to change hereafter
+
+
+Pending based SIRE  - SAme thing
+
+Reply based sire
+
+
+Expenses Local Currency and Exp. US dollar.
+
+
+
+Based on SIRE
+
+
+Defaults : Status - Request to be Sent.
+Technical Reply - Pending
+DAte tech reply is automatic
+Remove the case sensitive sorting.
+Change name to initcap. (user list, vessel name, 
+
+show deficiency button on the maint screen.next to MOC. Some view only, others update.
+
+Print screen.
+Report Generator.
+
+
+Remarks info .
+Multiple remarks - 
+remarks
+REMARKS_PIC                                        VARCHAR2(50)
+REMARK_TARGET_DATE                                 DATE
+REMARK_STATUS                                      VARCHAR2(10)
+
+
+

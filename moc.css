@@ -1,0 +1,906 @@
+<STYLE TYPE="text/css">
+.menuHide
+{
+    DISPLAY: block
+}
+.noborder
+{
+    BORDER-TOP-WIDTH: 0px;
+    BORDER-LEFT-WIDTH: 0px;
+    BORDER-BOTTOM-WIDTH: 0px;
+    BORDER-RIGHT-WIDTH: 0px
+}
+.bborder
+{
+    MARGIN-BOTTOM: 2px;
+    PADDING-BOTTOM: 2px
+}
+.tableheader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: midnightblue
+}
+.tableheaderdiff
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: mediumblue
+}
+.tableheaderalt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #c20000
+}
+.tableheaderdiffalt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #c20000
+}
+.tableheaderspl
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheaderdiffspl
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheadersplalt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheaderdiffsplalt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheaderflag
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheaderdiffflag
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheaderflagalt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.tableheaderdiffflagalt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE: none;
+    COLOR: white;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: royalblue
+}
+.ttitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    COLOR: white;
+    FONT-STYLE: normal;
+    FONT-FAMILY: 'Times New Roman', Arial;
+    BACKGROUND-COLOR: mediumblue;
+    TEXT-ALIGN: left
+}
+.tabledata
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: beige
+}
+.tabledatadiff
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: pink
+}
+.tabledataalt
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: cornsilk
+}
+.tabledatadiffalt
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: mistyrose
+}
+.tabledataspl
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #99ccff
+}
+.tabledatadiffspl
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: limegreen
+}
+.tabledatasplalt
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #bfdfee
+}
+.tabledatadiffsplalt
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #99cc99
+}
+.tabledataflag
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: lightblue
+}
+.tabledatadiffflag
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: pink
+}
+.tabledataflagalt
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: lightblue
+}
+.tabledatadiffflagalt
+{
+    FONT-SIZE: 9px;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: mistyrose
+}
+H1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H3
+{
+    FONT-SIZE: 14pt;
+    COLOR: maroon;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H4
+{
+    FONT-SIZE: 12pt;
+    COLOR: darkred;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H5
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    COLOR: #cc0000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+BODY
+{
+    MARGIN-TOP: 0px;
+    FONT-SIZE: 10pt;
+    BACKGROUND-IMAGE: none;
+    MARGIN-BOTTOM: 0px;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: white
+}
+P
+{
+    MARGIN-TOP: 15px;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+OL
+{
+    FONT-SIZE: 10pt;
+    MARGIN-LEFT: 20px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LIST-STYLE-TYPE: square;
+    margin-width: 20
+}
+UL
+{
+    FONT-SIZE: 10pt;
+    MARGIN-LEFT: 20px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LIST-STYLE-TYPE: square;
+    margin-width: 20
+}
+.textyellowcolor
+{
+    COLOR: black;
+    BACKGROUND-COLOR: yellow
+}
+.textlightbluecolor
+{
+    COLOR: black;
+    BACKGROUND-COLOR: ivory
+}
+.bcolor
+{
+    BACKGROUND-COLOR: beige
+}
+.columncolor
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: 'Times New Roman';
+    BACKGROUND-COLOR: lightblue
+}
+.columncolor1
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: 'Times New Roman';
+    BACKGROUND-COLOR: gainsboro
+}
+A:active
+{
+    COLOR: firebrick
+}
+A
+{
+    COLOR: blue;
+    TEXT-DECORATION: none
+}
+.tableheader1
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: antiquewhite
+}
+A:active .tactive
+{
+    COLOR: firebrick
+}
+.bgcolorlogin
+{
+    BACKGROUND-COLOR: beige
+}
+.lborder
+{
+}
+.nomargin
+{
+    PADDING-LEFT: 1px;
+    MARGIN-LEFT: 0px
+}
+.span_style
+{
+    FONT-SIZE: 10pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial
+}
+.headeritem
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial
+}
+.textbox
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: palegoldenrod
+}
+.textboxdiff
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: pink
+}
+.plaintext
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: palegoldenrod;
+    TEXT-ALIGN: justify
+}
+.textboxalt
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: cornsilk
+}
+.textboxdiffalt
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: mistyrose
+}
+.textboxspl
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #99ccff
+}
+.textboxdiffspl
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: limegreen
+}
+.textboxsplalt
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #bfdfee
+}
+.textboxdiffsplalt
+{
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #99cc99
+}
+.textboxflag
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: palegoldenrod
+}
+.textboxdiffflag
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: pink
+}
+.textboxflagalt
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: cornsilk
+}
+.textboxdiffflagalt
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    Z-INDEX: 8;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: mistyrose
+}
+.heading1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial
+}
+.heading4
+{
+    FONT-WEIGHT: 900;
+    FONT-SIZE: 12pt;
+    COLOR: maroon;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial
+}
+.cmdbutton
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px
+}
+.chkbox
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 20px
+}
+.ddlist
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: white
+}
+.textarea
+{
+    DISPLAY: block;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: white
+}
+.textareah
+{
+    DISPLAY: none;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: palegoldenrod
+}
+.textareaspl
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #99ccff
+}
+.message
+{
+    BORDER-RIGHT: red;
+    BORDER-TOP: red;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: red;
+    COLOR: red;
+    BORDER-BOTTOM: red;
+    FONT-FAMILY: Verdana, Arial
+}
+.filebrowse
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: palegoldenrod
+}
+.hyperlinkheader
+{
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial
+}
+.outerborder
+{
+    BORDER-RIGHT: slategray 3px solid;
+    BORDER-TOP: slategray 3px solid;
+    BORDER-LEFT: slategray 3px solid;
+    BORDER-BOTTOM: slategray 3px solid
+}
+.heading5
+{
+    FONT-WEIGHT: 900;
+    FONT-SIZE: 10pt;
+    COLOR: royalblue;
+    FONT-FAMILY: Verdana, Arial
+}
+.textnote
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: mediumblue;
+    FONT-FAMILY: Verdana, Arial
+}
+.clCMAbs
+{
+    LEFT: 0px;
+    VISIBILITY: hidden;
+    POSITION: absolute;
+    TOP: 0px
+}
+.clBar
+{
+    VISIBILITY: hidden;
+    WIDTH: 10px;
+    POSITION: absolute;
+    HEIGHT: 10px;
+    BACKGROUND-COLOR: palegoldenrod;
+    layer-background-color: palegoldenrod
+}
+.clLevel0
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma,arial,helvetica;
+    POSITION: absolute;
+    align: center
+}
+.clLevel0over
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma,arial,helvetica;
+    POSITION: absolute;
+    align: center
+}
+.clLevel0
+{
+    COLOR: maroon;
+    BACKGROUND-COLOR: palegoldenrod;
+    layer-background-color: palegoldenrod
+}
+.clLevel0over
+{
+    CURSOR: hand;
+    COLOR: palegoldenrod;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.clLevel0border
+{
+    VISIBILITY: hidden;
+    POSITION: absolute;
+    BACKGROUND-COLOR: palegoldenrod;
+    layer-background-color: palegoldenrod
+}
+.clLevel1
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma, arial,helvetica;
+    POSITION: absolute
+}
+.clLevel1over
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma, arial,helvetica;
+    POSITION: absolute
+}
+.clLevel1
+{
+    COLOR: maroon;
+    BACKGROUND-COLOR: palegoldenrod;
+    layer-background-color: palegoldenrod
+}
+.clLevel1over
+{
+    CURSOR: hand;
+    COLOR: palegoldenrod;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.clLevel1border
+{
+    VISIBILITY: hidden;
+    POSITION: absolute;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.clLevel2
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma,arial,helvetica;
+    POSITION: absolute
+}
+.clLevel2over
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma,arial,helvetica;
+    POSITION: absolute
+}
+.clLevel2
+{
+    COLOR: maroon;
+    BACKGROUND-COLOR: palegoldenrod;
+    layer-background-color: palegoldenrod
+}
+.clLevel2over
+{
+    CURSOR: hand;
+    COLOR: palegoldenrod;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.clLevel2border
+{
+    VISIBILITY: hidden;
+    POSITION: absolute;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.clLevel3
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma,arial,helvetica;
+    POSITION: absolute
+}
+.clLevel3over
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: tahoma,arial,helvetica;
+    POSITION: absolute
+}
+.clLevel3
+{
+    COLOR: maroon;
+    BACKGROUND-COLOR: palegoldenrod;
+    layer-background-color: palegoldenrod
+}
+.clLevel3over
+{
+    CURSOR: hand;
+    COLOR: palegoldenrod;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.clLevel3border
+{
+    VISIBILITY: hidden;
+    POSITION: absolute;
+    BACKGROUND-COLOR: maroon;
+    layer-background-color: maroon
+}
+.columncolor2
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: lavender
+}
+.columncolor3
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: beige
+}
+.bg_blue_color_white
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: blue
+}
+.bg_gray_color_white
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: gray
+}
+.bg_red_color_white
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: red
+}
+.reportheading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+    FONT-FAMILY: Arial, Verdana
+}
+.reportsubheading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: Arial, Verdana
+}
+.reportsubsubheading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana
+}
+.reporttableheading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana
+}
+.reporttabledata
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana
+}
+.thinborder
+{
+    BORDER-RIGHT: lightslategray 1px solid;
+    BORDER-TOP: lightslategray 1px solid;
+    BORDER-LEFT: lightslategray 1px solid;
+    BORDER-BOTTOM: lightslategray 1px solid
+}
+.txt
+{
+    TEXT-ALIGN: left
+}
+.num
+{
+    TEXT-ALIGN: right
+}
+.tot
+{
+    FONT-WEIGHT: bold;
+    COLOR: red;
+    BACKGROUND-COLOR: lightsteelblue;
+    TEXT-ALIGN: right
+}
+
+.crewTable
+{
+    border:1px solid outset;
+    font-size:9px;
+    
+}
+
+.crewData td
+{
+    font-size:10px;
+}
+
+.crewHeader
+{
+    background-color:ActiveCaption;
+    color:White;
+    font-size:10px;
+    
+}
+</STYLE> 

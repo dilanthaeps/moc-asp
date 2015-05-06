@@ -1,0 +1,43 @@
+date 15/5/1998
+
+Align all table header alignment
+
+Remove the close warn on maint page where there no entry fields
+
+put br for chr(13)
+
+New window for remark entry and def entry.
+
+save. Save and Close, close without save, (no back)
+
+Delete caution  (Are you sure? This Observation record will be deleted!)
+
+
+Update MOC Inspector Detils ( Inspection Details)
+
+Add New MOC Inspection Details (Create New Inspection Record)
+
+Link ----> Select
+Increase the short name of the agent 
+Do not change the case on the names
+Remove the initcap for MOC shortname list
+
+
+
+Accepted by SIRE ---> list of moc from the active inspection.
+MOC/Date of Inspection / Port
+
+
+If completed then no target_date caution.
+
+
+Remarks due in 2 Months  - No Remarks Actually
+
+
+If there are completed def then blue.
+ Inspection Expiry Date Due in 1 Month  ====>  Inspection Due in 1 Month  
+Inspection Expiry Date due in 2 Months =====> Inspection Due in 2 Months 
+
+Inspection Expiry Date Overdue =====> Inspection Overdue 
+
+
